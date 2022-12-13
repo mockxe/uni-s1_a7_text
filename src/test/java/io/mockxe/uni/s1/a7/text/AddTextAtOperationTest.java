@@ -14,4 +14,10 @@ class AddTextAtOperationTest {
         assert modifiedDocument.getContent().equals("Hello World!");
     }
 
+    @Test
+    void testAddTextAtOperationDescription() {
+        Operation operation = new AddTextAtOperation(1, "Hello");
+        assert operation.getDescription().equals("adds the following text at position 1: Hello");
+    }
+
 }

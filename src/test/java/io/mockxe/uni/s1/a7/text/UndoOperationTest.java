@@ -19,4 +19,10 @@ class UndoOperationTest {
         assert undoDocument == textDocument;
     }
 
+    @Test
+    void testUndoOperationDescription() {
+        Operation operation = new UndoOperation();
+        assert operation.getDescription().equals("reverts the previous operation");
+    }
+
 }

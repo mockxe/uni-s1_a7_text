@@ -18,4 +18,9 @@ public class AddTextAtOperation extends Operation {
         return current.addTextAt(position, addition);
     }
 
+    @Override
+    public String getDescription() {
+        return "adds the following text at position " + position + ": " + addition;
+    }
+
 }

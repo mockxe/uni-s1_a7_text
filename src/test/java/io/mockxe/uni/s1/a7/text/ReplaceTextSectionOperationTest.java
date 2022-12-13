@@ -14,4 +14,10 @@ class ReplaceTextSectionOperationTest {
         assert modifiedDocument.getContent().equals("Hello World!");
     }
 
+    @Test
+    void testRemoveTextSectionOperationDescription() {
+        Operation operation = new RemoveTextSectionOperation(1, 2);
+        assert operation.getDescription().equals("removes the text section from 1 to 2");
+    }
+
 }

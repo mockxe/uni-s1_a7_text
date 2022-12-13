@@ -18,4 +18,9 @@ public class RemoveTextSectionOperation extends Operation {
         return current.removeTextSection(beginIndex, endIndex);
     }
 
+    @Override
+    public String getDescription() {
+        return "removes the text section from " + beginIndex + " to " + endIndex;
+    }
+
 }

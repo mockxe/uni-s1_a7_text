@@ -21,4 +21,9 @@ public class ReplaceTextSectionOperation extends Operation {
         return current.replaceTextSection(beginIndex, endIndex, replacement);
     }
 
+    @Override
+    public String getDescription() {
+        return "replaces the text section from " + beginIndex + " to " + endIndex + " by: " + replacement;
+    }
+
 }

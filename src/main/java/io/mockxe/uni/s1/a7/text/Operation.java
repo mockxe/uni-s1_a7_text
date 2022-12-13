@@ -6,4 +6,8 @@ public class Operation {
         return  current.noop();
     }
 
+    public String getDescription() {
+        return "does not modify the document";
+    }
+
 }

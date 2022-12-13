@@ -14,4 +14,10 @@ class OperationTest {
         assert modifiedDocument.getContent().equals(textDocument.getContent());
     }
 
+    @Test
+    void testOperationDescription() {
+        Operation operation = new Operation();
+        assert operation.getDescription().equals("does not modify the document");
+    }
+
 }

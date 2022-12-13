@@ -7,4 +7,9 @@ public class UndoOperation extends Operation {
         return current.undo();
     }
 
+    @Override
+    public String getDescription() {
+        return "reverts the previous operation";
+    }
+
 }
