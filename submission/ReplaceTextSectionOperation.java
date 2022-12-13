@@ -7,7 +7,11 @@ public class ReplaceTextSectionOperation extends Operation {
     private String replacement;
 
 
-    public ReplaceTextSectionOperation(int beginIndex, int endIndex, String replacement) {
+    public ReplaceTextSectionOperation(
+            int beginIndex,
+            int endIndex,
+            String replacement
+    ) {
         this.beginIndex = beginIndex;
         this.endIndex = endIndex;
         this.replacement = replacement;
@@ -21,7 +25,8 @@ public class ReplaceTextSectionOperation extends Operation {
 
     @Override
     public String getDescription() {
-        return "replaces the text section from " + beginIndex + " to " + endIndex + " by: " + replacement;
+        return "replaces the text section from " +
+                beginIndex + " to " + endIndex + " by: " + replacement;
     }
 
 }
