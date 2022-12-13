@@ -1,9 +1,14 @@
 plugins {
+    id("application")
     id("java")
 }
 
 group = "io.mockxe.uni.s1.a7.text"
 version = "1.0-SNAPSHOT"
+
+application {
+    mainClass.set("io.mockxe.uni.s1.a7.text.Launcher")
+}
 
 repositories {
     mavenCentral()
